@@ -1,0 +1,17 @@
+{
+  "name": "vertxdemo",
+  "version": "0.0.1",
+  "description": "A vert.x demo application",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vert.x"
+  ],
+  "author": "Brian Leathem",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.8.10"
+  }
+}
