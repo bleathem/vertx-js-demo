@@ -1,5 +1,9 @@
+'use strict';
+
 var gulp = require('gulp');
 
-gulp.task('default', function() {
-  // place code for your default task here
-});
+var opts = {};
+
+require('./tasks/vertx.gulp.js')(gulp, opts);
+
+gulp.task('default', ['vertx']);
