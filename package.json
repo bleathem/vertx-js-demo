@@ -12,7 +12,8 @@
   "author": "Brian Leathem",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.8.10"
+    "gulp": "^3.8.10",
+    "gulp-zip": "^2.0.2"
   },
   "dependencies": {
     "gulp-util": "^3.0.2"
