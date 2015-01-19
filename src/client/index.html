@@ -2,12 +2,24 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
 
 <body>
-  <div id="chat"></div>
-  <input type="text" name="message" id="message">
-  <button type="button" id="submit">Submit</button>
+  <div id="loginPanel">
+    <form id="loginForm">
+      <input type="text" name="username" id="username">
+      <button type="submit" id="loginButton">Login</button>
+    </form>
+  </div>
+  <div id="chatPanel">
+    <div id="messages"></div>
+      <form id="chatForm">
+        <input type="text" name="message" id="message">
+        <button type="submit" id="submitButton">Submit</button>
+      </form>
+  </div>
+
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/0.3.4/sockjs.min.js"></script>
