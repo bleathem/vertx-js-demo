@@ -8,7 +8,7 @@ var spawn = require('child_process').spawn
   , gutil = require('gulp-util');
 
 module.exports = function(gulp, opts) {
-  gulp.task('vertx', ['zip'], function(done) {
+  gulp.task('vertx', [], function(done) {
     var child = spawn('vertx', ['runmod', opts.module.name, '-cp', opts.paths.cp ], {cwd: process.cwd()}),
         stdout = '',
         stderr = '';

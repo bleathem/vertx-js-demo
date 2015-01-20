@@ -1,6 +1,6 @@
 'use strict';
 
-process.env.VERTX_MODS = 'dist/mods';
+process.env.VERTX_MODS = 'vertx_modules';
 
 var gulp = require('gulp');
 
@@ -17,7 +17,7 @@ var opts = {
 };
 
 opts.module.name = opts.module.group + '~' + opts.module.artifact + '~' + opts.module.version + '.zip';
-opts.paths.cp = opts.paths.dist + '/' + opts.module.name;
+opts.paths.cp = 'src';
 
 require('./tasks/vertx.gulp.js')(gulp, opts);
 require('./tasks/zip.gulp.js')(gulp, opts);

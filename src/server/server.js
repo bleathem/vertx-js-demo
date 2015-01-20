@@ -14,7 +14,7 @@ routeMatcher.post('/api/user', function(req) {
   };
   req.response.end(JSON.stringify(data));
 });
-var staticHandler = new org.vertx.mods.web.StaticFileHandler(__jvertx, 'src/client', 'src/client/index.html', false, false);
+var staticHandler = new org.vertx.mods.web.StaticFileHandler(__jvertx, 'client', 'client/index.html', false, false);
 routeMatcher._to_java_handler().noMatch(staticHandler);
 server.requestHandler(routeMatcher);
 
