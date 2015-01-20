@@ -40,7 +40,14 @@
 
   var chatResponseHandler = function(data) {
     var p = document.createElement('p');
-    p.textContent = data.message;
+    var username = document.createElement('span');
+    username.className = 'username';
+    username.textContent = data.user;
+    var message = document.createElement('span');
+    message.className = 'message';
+    message.textContent = data.message;
+    p.appendChild(username);
+    p.appendChild(message);
     p.className = data.user === user ? 'right' : 'left';
     var messages = document.getElementById('messages');
     messages.appendChild(p);

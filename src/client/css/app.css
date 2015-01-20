@@ -16,3 +16,13 @@
 .right {
   text-align: right;
 }
+
+.username {
+  display: block;
+  font-style: italic;
+  color: #999999;
+}
+
+.username::after {
+  content: ":";
+}
